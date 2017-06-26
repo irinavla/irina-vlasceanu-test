@@ -1,0 +1,42 @@
+/* GRID STRUCTURE */
+
+.content-960 {
+   @include container;
+   @include susy-breakpoint (320px 1024px) {
+       @include with-layout($full_width);
+       padding-left:20px;
+       padding-right:20px;
+   }
+}
+.content-area {
+   @include flexbox();
+   @include flex-wrap(wrap);
+}
+.col-6 {
+    @include span (6 split);
+}
+.col-3 {
+    @include span (4 split);
+}
+.col-4 {
+    @include span (3 split);
+}
+
+/* MEDIA QUERIES */
+
+@include susy-breakpoint(600px 1024px) {
+    .col-4 {
+        @include span (6 split);
+        margin-bottom: 20px;
+    }
+}
+
+@include susy-breakpoint(320px 599px) {
+    .col-6,
+    .col-4,
+    .col-3 {
+       @include span (12 split);
+       margin-bottom:20px;
+    }
+}
+

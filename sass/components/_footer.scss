@@ -1,0 +1,50 @@
+footer.site-footer {
+    background: $dark-grey;
+    padding: 20px 0;
+    .content-area {
+        @include justify-content(space-between);
+    }
+    ul {
+        li {
+            display:inline-block;
+        }
+    }
+    .copy {
+        @include span (9 first);
+        a {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .social-links {
+        text-align: right;
+        @include span (3 last);
+        .social {
+            width:22px;
+            height:22px;
+            line-height: 22px;
+            display:block;
+            text-align: center;
+            background: #545454;
+            color: #fff;
+            &:hover {
+                background: #677ac6;
+            }
+        }
+    }
+    @include susy-breakpoint( 320px 991px ) {
+        .content-area {
+            @include flex-direction(column);
+            @include align-items(center);
+        }
+        .copy,
+        .social-links {
+            @include span (12);
+            text-align: center;
+        }
+        .copy {
+            margin-bottom: 20px;
+        }
+    }
+}

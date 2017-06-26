@@ -1,0 +1,30 @@
+/* == VARIABLES == */
+
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600');
+$body-font:  'Open Sans', sans-serif;
+$serif-font: 'Times', serif;
+
+
+/* COLORS */
+$theme-color-a: #10b1df; // blue
+$theme-color-b: #b0d546; // green
+$theme-color-c: #ff048c; // pink
+$theme-color-d: #ff9600; // orange
+
+$dark-grey: #333;
+$light-grey: #d3d3d3;
+
+$text-color: #525252;
+$light-text-color: #7c7c7c;
+
+$icomoon-font-path: "../fonts" !default;
+$fa-facebook: "\f09a";
+$fa-facebook-f: "\f09a";
+$fa-group: "\f0c0";
+$fa-users: "\f0c0";
+$fa-angle-left: "\f104";
+$fa-angle-right: "\f105";
+$fa-tumblr: "\f173";
+$fa-vimeo: "\f27d";
+$fa-flickr2: "\eaa4";

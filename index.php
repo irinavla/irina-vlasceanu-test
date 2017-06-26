@@ -1,0 +1,9 @@
+<?php 
+include('template-parts/data.php');
+require_once('template-parts/header.php');
+require_once('template-parts/hero-slider.php');
+require_once('template-parts/services.php');
+require_once('template-parts/projects.php');
+require_once('template-parts/footer-area.php');
+require_once('template-parts/footer.php');
+?>        

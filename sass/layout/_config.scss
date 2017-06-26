@@ -1,0 +1,28 @@
+$susy:  (
+    flow: ltr,// layout direction
+    output: float, // uses CSS floats
+    math: fluid, // fluid | static use math:static with fixed column width
+    container: 960px, // width or auto 
+    container-position: center, //| ex. 100px gives you grid margin
+    column-width: false, // false or pixel width
+    columns: 12,
+    gutters: 1/5, // the gutters are the same size as a column
+    gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
+    global-box-sizing: border-box, // border-box
+);
+
+$full_width : (
+    container: 100%,
+    container-position: center, //| ex. 100px gives you grid margin
+    column-width: false, // false or pixel width
+    columns: 12,
+    gutters: 1/5, // the gutters are the same size as a column
+    gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
+    global-box-sizing: border-box, // border-box
+);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }

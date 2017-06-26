@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding:65px 0 0 0;
+    margin:0;
+    font-family: $body-font;
+    color: $text-color;
+    @include font-size(12);
+    @extend .regular;
+    position:relative;
+    @include susy-breakpoint (320px 991px) {
+       padding:60px 0 0 0;
+    }
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+    @include transition(all 0.3s ease);
+}
+
+ul, ol {
+    list-style:none;
+    margin:0;
+    padding:0;
+}

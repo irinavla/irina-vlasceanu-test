@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor:pointer;
+  @include font-size(12);
+  @extend .bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.icon-button-group {
+  .btn-left {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+  .btn-right {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size:20px;
+    border-left: 1px solid #eee;
+  }
+}
